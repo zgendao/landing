@@ -13,8 +13,8 @@
 			</p>
 		</div>
 		<div class="mt-4 mr-3 lg:m-0">
-			<img class="object-center lg:hidden" src="static/blockbuilding.svg" />
-			<img class="hidden object-center lg:block xl:scale-125" src="static/outdoor.svg" />
+			<img class="object-center lg:hidden" src="blockbuilding.svg" />
+			<img class="hidden object-center lg:block xl:scale-125" src="outdoor.svg" />
 		</div>
 	</div>
 </section>
@@ -141,7 +141,7 @@
 <style>
 	@media (min-width: 1024px) {
 		.hatter {
-			background-image: url("static/hatter.svg");
+			background-image: url("hatter.svg");
 			@apply bg-no-repeat bg-center bg-top;
 			background-size: 100% auto;
 		}
