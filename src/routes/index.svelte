@@ -1,6 +1,6 @@
 <script>
-	import Inside from "$lib/inside.svelte";
 	import Outside from "$lib/Outside.svelte";
+	import Inside from "$lib/Inside.svelte";
 
 	let page = "outside";
 </script>

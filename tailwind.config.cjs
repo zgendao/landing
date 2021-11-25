@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
 	mode: "jit",
 	purge: ["./src/**/*.{html,js,svelte,ts}"],
 
@@ -28,3 +28,5 @@ module.exports = {
 
 	plugins: []
 };
+
+module.exports = config;

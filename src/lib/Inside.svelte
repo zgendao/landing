@@ -1,3 +1,15 @@
+<script>
+	const handleSubmit = (event) => {
+		const form = event.target;
+		console.log(form);
+		const data = new FormData(form);
+		console.log(data);
+		// const json = JSON.stringify(Object.fromEntries(data));
+		// console.log(json);
+		fetch(form.action, { method: "post", body: data });
+	};
+</script>
+
 <section class="flex items-center justify-center min-h-screen bg-blue-medium">
 	<div class="container flex flex-col items-center justify-center lg:flex-row lg:gap-20 xl:gap-24">
 		<div class="flex flex-col items-center justify-center max-w-lg gap-4 mb-3 xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-2xl">
@@ -23,7 +35,7 @@
 		<div class="flex justify-center w-full hatter">
 			<div class="mx-8 w-max lg:mx-0">
 				<h1 class="mb-8 text-4xl text-center text-white mt-42 lg:text-black lg:text-5xl xl:text-6xl lg:mt-56 2xl:mt-72 ">BUILD WITH US</h1>
-				<form action="/api/form" method="post">
+				<form action="/form" method="post" on:submit|preventDefault={handleSubmit}>
 					<div class="w-full mb-6">
 						<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="name">
 							What is your name?
