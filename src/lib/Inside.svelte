@@ -1,12 +1,9 @@
 <script>
 	const handleSubmit = (event) => {
 		const form = event.target;
-		console.log(form);
 		const data = new FormData(form);
-		console.log(data);
-		// const json = JSON.stringify(Object.fromEntries(data));
-		// console.log(json);
-		fetch(form.action, { method: "post", body: data });
+		const json = JSON.stringify(Object.fromEntries(data));
+		fetch(form.action, { method: "post", body: json }).then((response) => response.ok);
 	};
 </script>
 
