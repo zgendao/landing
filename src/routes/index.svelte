@@ -204,7 +204,7 @@
 	</section>
 {/if}
 
-<!-- {#if LottiePlayer}
+{#if LottiePlayer}
 	<LottiePlayer
 		src="https://assets1.lottiefiles.com/packages/lf20_twlz7dr7.json"
 		autoplay={true}
@@ -216,7 +216,8 @@
 		width={600}
 		{controlsLayout}
 	/>
-{/if} -->
+{/if}
+
 <style>
 	@media (min-width: 1024px) {
 		.hatter {
