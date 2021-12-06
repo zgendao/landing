@@ -248,7 +248,7 @@
 <style>
 	@media (min-width: 1024px) {
 		.hatter {
-			background-image: url("hatter.svg");
+			background-image: url("/hatter.svg");
 			@apply bg-no-repeat bg-center bg-top;
 			background-size: 100% auto;
 		}
