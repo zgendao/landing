@@ -2,6 +2,7 @@
 	let page = "outside";
 
 	import { onMount } from "svelte";
+	import { SvelteToast, toast } from "@zerodevx/svelte-toast";
 
 	let LottiePlayer;
 
@@ -33,8 +34,32 @@
 		const form = event.target;
 		const data = new FormData(form);
 		const json = JSON.stringify(Object.fromEntries(data));
-		fetch(form.action, { method: "post", body: json }).then((response) => response.ok);
+		fetch(form.action, { method: "post", body: json }).then((response) => (response.ok ? onSuccess() : onError()));
 	};
+
+	function onError() {
+		toast.push("Error", {
+			theme: {
+				"--toastColor": "#743636",
+				"--toastBackground": "#D8B0B0",
+				"--toastBarBackground": "#743636",
+				"--toastPadding": "0.5rem 1rem"
+			}
+			// duration: 40000
+		});
+	}
+
+	function onSuccess() {
+		toast.push("Success", {
+			theme: {
+				"--toastColor": "#305140",
+				"--toastBackground": "#B0D8C1",
+				"--toastBarBackground": "#305140",
+				"--toastPadding": "0.5rem 1rem"
+			}
+			// duration: 40000
+		});
+	}
 </script>
 
 {#if page === "outside"}
@@ -203,6 +228,7 @@
 		</div>
 	</section>
 {/if}
+<SvelteToast options={{ reversed: true, intro: { y: 192 } }} />
 
 <!-- {#if LottiePlayer}
 	<LottiePlayer
