@@ -122,7 +122,7 @@
 						</div>
 						<div class="w-full mb-6">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="describe">
-								How would you described yourself in few senteces?
+								How do you busy yourself?
 							</label>
 							<textarea id="describe" name="describe" type="text" placeholder="A short introduction..." rows="4" />
 						</div>
@@ -145,6 +145,7 @@
 									<option>Frontend Dev</option>
 									<option>Backend Dev</option>
 									<option>BizDev</option>
+									<option>Smart contracts</option>
 									<option>Community</option>
 									<option>Project management</option>
 									<option>Finance</option>
@@ -172,6 +173,7 @@
 									<option>Frontend Dev</option>
 									<option>Backend Dev</option>
 									<option>BizDev</option>
+									<option>Smart contracts</option>
 									<option>Community</option>
 									<option>Project management</option>
 									<option>Finance</option>
@@ -200,19 +202,19 @@
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="hobbies">
 								How do you entertain yourself? Tell us about your hobbies.
 							</label>
-							<textarea id="hobbies" name="hobbies" type="text" placeholder="..." rows="3" />
+							<textarea id="hobbies" name="hobbies" type="text" placeholder="Your freetime activities" rows="3" />
 						</div>
 						<div class="w-full mb-6">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="us">
 								Where are you heard about us?
 							</label>
-							<input id="us" name="us" type="text" placeholder="..." />
+							<input id="us" name="us" type="text" placeholder="Friends, forums" />
 						</div>
 						<div class="w-full mb-6">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="reach">
 								How can we reach you?
 							</label>
-							<textarea id="reach" name="reach" type="text" placeholder="..." rows="2" required />
+							<textarea id="reach" name="reach" type="text" placeholder="Email, Discord, Telegram" rows="2" required />
 						</div>
 						<div class="flex items-center justify-center w-full mb-10">
 							<button
