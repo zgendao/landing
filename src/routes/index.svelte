@@ -118,7 +118,7 @@
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="name">
 								What is your name?
 							</label>
-							<input id="name" name="name" type="text" placeholder="Full name" />
+							<input id="name" name="name" type="text" placeholder="Full name" required />
 						</div>
 						<div class="w-full mb-6">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="describe">
@@ -134,7 +134,7 @@
 						</div>
 						<div class="flex flex-col items-start justify-start w-full">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="primary">
-								What say'st are your primary skills?
+								What say'st are your primary skill?
 							</label>
 							<div class="flex flex-row items-start justify-start w-full mb-6 ">
 								<select
@@ -160,7 +160,7 @@
 						</div>
 						<div class="flex flex-col items-start justify-start w-full">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="secondary">
-								And your secondary skills?
+								And your secondary skill?
 							</label>
 							<div class="flex flex-row items-start justify-start w-full mb-6 ">
 								<select
@@ -212,7 +212,7 @@
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="reach">
 								How can we reach you?
 							</label>
-							<textarea id="reach" name="reach" type="text" placeholder="..." rows="2" />
+							<textarea id="reach" name="reach" type="text" placeholder="..." rows="2" required />
 						</div>
 						<div class="flex items-center justify-center w-full mb-10">
 							<button
