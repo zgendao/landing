@@ -89,7 +89,7 @@
 	<section class="flex items-center justify-center min-h-screen bg-blue-medium">
 		<div class="container flex flex-col items-center justify-center lg:flex-row lg:gap-20 xl:gap-24">
 			<div class="flex flex-col items-center justify-center max-w-lg gap-4 mb-3 xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-2xl">
-				<h1 class="mb-1 text-4xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl">A GUILD OF CURIOUS BUILDERS</h1>
+				<h1 class="mb-1 text-4xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl">WE ARE SUPERCHARGING WEB3</h1>
 				<p class="text-lg font-medium text-center text-white lg:text-2xl xl:text-3xl xl:font-normal lg:text-left">
 					Building our own ideas in our unique style without compromise.
 				</p>
@@ -206,7 +206,7 @@
 						</div>
 						<div class="w-full mb-6">
 							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="us">
-								Where are you heard about us?
+								Where have you heard about us?
 							</label>
 							<input id="us" name="us" type="text" placeholder="Friends, forums" />
 						</div>
