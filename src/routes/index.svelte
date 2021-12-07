@@ -63,32 +63,46 @@
 </script>
 
 {#if page === "outside"}
-	<div class="container flex items-center justify-center w-full min-h-screen">
-		<section class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch xl:gap-24">
-			<div class="flex flex-col items-center max-w-lg gap-5 m-0 lg:items-start lg:pb-10 xl:max-w-2xl xl:gap-7">
-				<img class="object-center lg:hidden" src="logo.svg" />
-				<img class="hidden object-left mb-4 stroke-2 lg:block" src="logo2.svg" />
-				<h1 class="text-5xl text-center text-black lg:text-left xl:text-6xl">A GUILD OF CURIOUS BUILDERS</h1>
-				<p class="max-w-md text-lg font-medium text-center lg:text-left lg:text-2xl xl:text-3xl xl:font-normal">
-					Building ethereum protocols and web3 applications for DeFi and DAO communitites.
-				</p>
-				<button
-					class="px-10 py-2 mt-10 font-bold text-white border-2 border-black xl:px-14 xl:py-3 xl:text-xl bg-blue-medium hover:bg-blue-dark square"
-					on:click={handleClick}
-				>
-					Build with us
-				</button>
+	<section class="bg-white">
+		<div class="container flex items-center justify-center w-full min-h-screen">
+			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch xl:gap-24">
+				<div class="flex flex-col items-center max-w-md gap-5 m-0 lg:items-start lg:pb-5 xl:max-w-lg xl:gap-7">
+					<img class="object-center lg:hidden" src="logo.svg" />
+					<h1 class="tracking-tight xl:leading-[4rem] text-5xl text-center text-black lg:text-left xl:text-7xl">
+						A GUILD OF<br /> CURIOUS<br /> BUILDERS
+					</h1>
+					<p class="max-w-md text-lg font-medium text-center text-black xl:leading-7 lg:text-left lg:text-2xl xl:text-2xl xl:font-normal">
+						Building <b>smart contracts</b> on<br /> ethereum, <b>web3 applications</b> for<br />DeFi and DAO communitites.
+					</p>
+					<div class="flex items-center gap-6 mt-10 text-black transition duration-500 group hover:text-blue-dark">
+						<button class="tracking-tight xl:leading-1 font-display font-black xl:text-[1.65rem] square" on:click={handleClick}>
+							LEARN MORE
+						</button>
+						<!-- svelte-ignore a11y-missing-attribute -->
+						<svg class="animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M175.371 2.23431C175.722 1.9219 176.292 1.9219 176.643 2.23431L184.737 9.43432C185.088 9.74673 185.088 10.2533 184.737 10.5657L176.643 17.7657C176.292 18.0781 175.722 18.0781 175.371 17.7657C175.02 17.4533 175.02 16.9467 175.371 16.6343L181.93 10.8L3.13597 11C2.6393 11 2 10.726 2 10.2842C2 9.61437 2.6393 9.4 3.13597 9.4L181.93 9.2L175.371 3.36569C175.02 3.05327 175.02 2.54673 175.371 2.23431Z"
+								fill="currentColor"
+								stroke="currentColor"
+								stroke-width="2.1"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="hidden w-full lg:block">
+					<img class="object-center h-full" src="indoor.svg" alt="The door of zgen" />
+				</div>
 			</div>
-
-			<div class="hidden lg:block">
-				<img class="object-center h-full" src="indoor.svg" alt="The door of zgen" />
-			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 {:else}
 	<section class="flex items-center justify-center min-h-screen bg-blue-medium">
 		<div class="container flex flex-col items-center justify-center lg:flex-row lg:gap-20 xl:gap-24">
-			<div class="flex flex-col items-center justify-center max-w-lg gap-4 mb-3 xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-2xl">
+			<div class="flex flex-col items-center justify-center max-w-md gap-4 mb-3 xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-xl">
 				<h1 class="mb-1 text-4xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl">WE ARE SUPERCHARGING WEB3</h1>
 				<p class="text-lg font-medium text-center text-white lg:text-2xl xl:text-3xl xl:font-normal lg:text-left">
 					Building our own ideas in our unique style without compromise.

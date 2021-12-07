@@ -33,7 +33,7 @@
 }
 
 html {
-	font-family: "Inter", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -62,4 +62,16 @@ textarea {
 	--toastContainerRight: auto;
 	--toastContainerBottom: 4rem;
 	--toastContainerLeft: calc(50vw - 8rem);
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateX(-0.5%);
+		animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+	}
+	50% {
+		transform: translateX(0);
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
 }
