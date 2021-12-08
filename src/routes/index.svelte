@@ -66,14 +66,14 @@
 	<section class="bg-white">
 		<div class="container flex items-center justify-center w-full min-h-screen">
 			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch lg:gap-24">
-				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg 2xl:max-w-xl lg:gap-7">
+				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg xl:max-w-xl lg:gap-7">
 					<h1
-						class="tracking-tight leading-[0.95] lg:leading-[4rem] 2xl:leading-[5.2rem] text-5xl md:text-6xl md:leading-[3.3rem] text-center text-black lg:text-left lg:text-7xl 2xl:text-8xl"
+						class="tracking-tight leading-[0.95] lg:leading-[4rem] xl:leading-[5.2rem] text-5xl md:text-6xl md:leading-[3.3rem] text-center text-black lg:text-left lg:text-7xl xl:text-8xl"
 					>
 						A GUILD OF<br /> CURIOUS<br /> BUILDERS
 					</h1>
 					<p
-						class="max-w-md md:text-xl text-lg font-normal text-center text-black 2xl:max-w-lg 2xl:text-3xl lg:leading-7 leading-[1.2] md:leading-[1.4rem] 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
+						class="max-w-md md:text-xl text-lg font-normal text-center text-black xl:max-w-lg xl:text-3xl lg:leading-7 leading-[1.2] md:leading-[1.4rem] xl:leading-[2.2rem] lg:text-left lg:text-xl lg:font-normal"
 					>
 						Building <b>smart contracts</b> on<br /> ethereum, <b>web3 applications</b> for<br />DeFi and DAO communitites.
 					</p>
@@ -81,15 +81,15 @@
 						<img class="object-center w-full" src="indoor.svg" alt="The door of zgen" />
 					</div>
 					<button
-						class="items-center hidden gap-5 mt-10 text-black transition transition-transform duration-500 lg:flex group hover:translate-x-1 2xl:mt-20 hover:text-blue-dark"
+						class="items-center hidden gap-5 mt-auto text-black transition transition-transform duration-500 lg:flex group hover:translate-x-1 hover:text-blue-dark"
 						on:click={handleClick}
 					>
 						<span
-							class="tracking-tight hover:tracking-normal lg:leading-1 font-display font-black lg:text-[1.65rem] 2xl:text-[2rem] letterSpacingTransition"
+							class="tracking-tight hover:tracking-normal lg:leading-1 font-display font-black lg:text-[1.65rem] xl:text-[2rem] letterSpacingTransition"
 						>
 							LEARN MORE
 						</span>
-						<div class="transition-transform origin-left 2xl:scale-125 group-hover:translate-x-2">
+						<div class="transition-transform origin-left xl:scale-125 group-hover:translate-x-2">
 							<svg class=" animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill-rule="evenodd"
@@ -106,7 +106,7 @@
 					</button>
 				</div>
 				<div class="hidden lg:block">
-					<img class="object-center h-full" src="indoor.svg" alt="Indoor graphic of zgen" />
+					<img class="object-center h-[423px] xl:h-[560px]" src="indoor.svg" alt="Indoor graphic of zgen" />
 				</div>
 			</div>
 		</div>
@@ -115,37 +115,37 @@
 	<section class="bg-blue-medium">
 		<div class="container flex items-center justify-center w-full min-h-screen">
 			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch lg:gap-24">
-				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg 2xl:max-w-xl lg:gap-7">
+				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg xl:max-w-xl lg:gap-7">
 					<h1
-						class="tracking-tight leading-[0.95] lg:leading-[4rem] 2xl:leading-[5.2rem] text-5xl md:text-6xl md:leading-[3.3rem] text-center text-white lg:text-left lg:text-7xl 2xl:text-8xl"
+						class="tracking-tight leading-[0.95] lg:leading-[4rem] xl:leading-[5.2rem] text-5xl md:text-6xl md:leading-[3.3rem] text-center text-white lg:text-left lg:text-7xl xl:text-8xl"
 					>
 						WE ARE<br /> BOOSTING<br /> WEB3
 					</h1>
-					<div class="flex flex-col gap-3">
+					<div class="flex flex-col gap-2 xl:gap-3">
 						<p
-							class="max-w-md md:text-xl text-lg font-normal text-center text-white 2xl:max-w-lg 2xl:text-3xl lg:leading-7 leading-[1.2] md:leading-[1.4rem] 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
+							class="max-w-md md:text-xl text-lg font-normal text-center text-white xl:max-w-lg xl:text-3xl lg:leading-6 leading-[1.2] md:leading-[1.4rem] xl:leading-[2.2rem] lg:text-left lg:text-xl lg:font-normal"
 						>
-							Building our own ideas in our unique style without compromise in <b>Szeged.</b>
+							Building our own ideas in our unique<br /> style without compromise in <b>Szeged.</b>
 						</p>
 						<p
-							class="max-w-md md:text-xl text-lg font-normal text-center text-white 2xl:max-w-lg 2xl:text-3xl lg:leading-7 leading-[1.2] md:leading-[1.4rem] 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
+							class="max-w-md md:text-xl text-lg font-normal text-center text-white xl:max-w-lg xl:text-3xl lg:leading-6 leading-[1.2] md:leading-[1.4rem] xl:leading-[2.2rem] lg:text-left lg:text-xl lg:font-normal"
 						>
 							We are backed by teams like<br /> <b>Polygon • Harmony • Aragon</b>
 						</p>
 					</div>
 					<div class="w-full pt-6 md:pt-8 lg:hidden">
-						<img class="object-center w-full pr-4 mt-6" src="blockbuilding.svg" />
+						<img class="object-center w-full pl-6 pr-12 mt-6 md:pl-0 md:pr-4 " src="blockbuilding.svg" />
 					</div>
 					<button
-						class="items-center hidden gap-5 mt-10 text-white transition transition-transform duration-500 lg:flex group hover:translate-x-1 2xl:mt-20 hover:text-blue-dark"
+						class="items-center hidden gap-5 mt-auto text-white transition transition-transform duration-700 lg:flex group hover:translate-x-1 hover:text-blue-narrow"
 						on:click={handleClick}
 					>
 						<span
-							class="tracking-tight hover:tracking-normal lg:leading-1 font-display font-black lg:text-[1.65rem] 2xl:text-[2rem] letterSpacingTransition"
+							class="tracking-tight hover:tracking-normal lg:leading-1 font-display font-black lg:text-[1.65rem] xl:text-[2rem] letterSpacingTransition"
 						>
 							BUILD WITH US
 						</span>
-						<div class="transition-transform origin-left 2xl:scale-125 group-hover:translate-x-2">
+						<div class="transition-transform origin-left xl:scale-125 group-hover:translate-x-2">
 							<svg class=" animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill-rule="evenodd"
@@ -162,39 +162,11 @@
 					</button>
 				</div>
 				<div class="hidden lg:block">
-					<img class="object-center h-full" src="outdoor.svg" alt="Indoor graphic of zgen" />
+					<img class="object-center h-[423px] xl:h-[560px]" src="outdoor.svg" alt="Indoor graphic of zgen" />
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- <section class="flex items-center justify-center min-h-screen bg-blue-medium">
-		<div class="container flex flex-col items-center justify-center lg:flex-row lg:gap-20 xl:gap-24">
-			<div
-				class="flex flex-col items-center justify-center max-w-xs gap-4 mb-3 lg:items-start xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-xl"
-			>
-				<h1
-					class="tracking-tight lg:leading-[4rem] 2xl:leading-[5.2rem] md:text-6xl md:leading-[3.3rem] lg:text-7xl 2xl:text-8xl mb-1 leading-[0.95] text-5xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl"
-				>
-					WE ARE<br /> BOOSTING<br /> WEB3
-				</h1>
-				<p
-					class="tracking-tight lg:leading-7 2xl:leading-[2.2rem] md:text-xl md:leading-[1.4rem] lg:text-2xl 2xl:text-3xl text-lg leading-[1.2] font-normal text-center text-white lg:text-2xl xl:font-normal lg:text-left"
-				>
-					Building our own ideas in our unique style without compromise in <b>Szeged.</b>
-				</p>
-				<p
-					class="tracking-tight lg:leading-7 2xl:leading-[2.2rem] md:text-xl md:leading-[1.4rem] lg:text-2xl 2xl:text-3xl text-lg leading-[1.2] font-normal text-center text-white lg:text-2xl xl:font-normal lg:text-left"
-				>
-					We are backed by teams like<br /> <b>Polygon • Harmony • Aragon</b>
-				</p>
-				<img class="object-center w-full pr-4 mt-6 lg:hidden" src="blockbuilding.svg" />
-			</div>
-			<div class="hidden lg:block">
-				<img class="object-center h-full" src="outdoor.svg" alt="Outdoor graphic of zgen"/>
-			</div>
-		</div>
-	</section> -->
 	<section class="flex justify-center w-full bg-blue-medium">
 		<div class="container flex flex-col items-center justify-center px-0 pt-12 lg:pt-0 xl:px-28">
 			<div class="flex justify-center w-full hatter">
