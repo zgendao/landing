@@ -66,20 +66,22 @@
 	<section class="bg-white">
 		<div class="container flex items-center justify-center w-full min-h-screen">
 			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch lg:gap-24">
-				<div class="flex flex-col items-center max-w-md gap-5 m-0 lg:items-start lg:pb-5 lg:max-w-lg 2xl:max-w-xl lg:gap-7">
-					<img class="object-center lg:hidden" src="logo.svg" />
+				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg 2xl:max-w-xl lg:gap-7">
 					<h1
-						class="tracking-tight lg:leading-[4rem] 2xl:leading-[5.2rem] text-5xl text-center text-black lg:text-left lg:text-7xl 2xl:text-8xl"
+						class="tracking-tight leading-[0.95] lg:leading-[4rem] 2xl:leading-[5.2rem] text-5xl md:text-6xl md:leading-[3.3rem] text-center text-black lg:text-left lg:text-7xl 2xl:text-8xl"
 					>
 						A GUILD OF<br /> CURIOUS<br /> BUILDERS
 					</h1>
 					<p
-						class="max-w-md text-lg font-medium text-center text-black 2xl:max-w-lg 2xl:text-3xl lg:leading-7 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
+						class="max-w-md md:text-xl text-lg font-normal text-center text-black 2xl:max-w-lg 2xl:text-3xl lg:leading-7 leading-[1.2] md:leading-[1.4rem] 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
 					>
 						Building <b>smart contracts</b> on<br /> ethereum, <b>web3 applications</b> for<br />DeFi and DAO communitites.
 					</p>
+					<div class="w-full pt-6 md:pt-8 lg:hidden">
+						<img class="object-center w-full" src="indoor.svg" alt="The door of zgen" />
+					</div>
 					<button
-						class="flex items-center gap-5 mt-10 text-black transition transition-transform duration-500 group hover:translate-x-1 2xl:mt-20 hover:text-blue-dark"
+						class="items-center hidden gap-5 mt-10 text-black transition transition-transform duration-500 lg:flex group hover:translate-x-1 2xl:mt-20 hover:text-blue-dark"
 						on:click={handleClick}
 					>
 						<span
