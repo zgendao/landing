@@ -65,33 +65,43 @@
 {#if page === "outside"}
 	<section class="bg-white">
 		<div class="container flex items-center justify-center w-full min-h-screen">
-			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch xl:gap-24">
-				<div class="flex flex-col items-center max-w-md gap-5 m-0 lg:items-start lg:pb-5 xl:max-w-lg xl:gap-7">
+			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch lg:gap-24">
+				<div class="flex flex-col items-center max-w-md gap-5 m-0 lg:items-start lg:pb-5 lg:max-w-lg 2xl:max-w-xl lg:gap-7">
 					<img class="object-center lg:hidden" src="logo.svg" />
-					<h1 class="tracking-tight xl:leading-[4rem] text-5xl text-center text-black lg:text-left xl:text-7xl">
+					<h1
+						class="tracking-tight lg:leading-[4rem] 2xl:leading-[5.2rem] text-5xl text-center text-black lg:text-left lg:text-7xl 2xl:text-8xl"
+					>
 						A GUILD OF<br /> CURIOUS<br /> BUILDERS
 					</h1>
-					<p class="max-w-md text-lg font-medium text-center text-black xl:leading-7 lg:text-left lg:text-2xl xl:text-2xl xl:font-normal">
+					<p
+						class="max-w-md text-lg font-medium text-center text-black 2xl:max-w-lg 2xl:text-3xl lg:leading-7 2xl:leading-[2.2rem] lg:text-left lg:text-2xl lg:font-normal"
+					>
 						Building <b>smart contracts</b> on<br /> ethereum, <b>web3 applications</b> for<br />DeFi and DAO communitites.
 					</p>
-					<div class="flex items-center gap-6 mt-10 text-black transition duration-500 group hover:text-blue-dark">
-						<button class="tracking-tight xl:leading-1 font-display font-black xl:text-[1.65rem] square" on:click={handleClick}>
+					<button
+						class="flex items-center gap-5 mt-10 text-black transition transition-transform duration-500 group hover:translate-x-1 2xl:mt-20 hover:text-blue-dark"
+						on:click={handleClick}
+					>
+						<span
+							class="tracking-tight hover:tracking-normal lg:leading-1 font-display font-black lg:text-[1.65rem] 2xl:text-[2rem] letterSpacingTransition"
+						>
 							LEARN MORE
-						</button>
-						<!-- svelte-ignore a11y-missing-attribute -->
-						<svg class="animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M175.371 2.23431C175.722 1.9219 176.292 1.9219 176.643 2.23431L184.737 9.43432C185.088 9.74673 185.088 10.2533 184.737 10.5657L176.643 17.7657C176.292 18.0781 175.722 18.0781 175.371 17.7657C175.02 17.4533 175.02 16.9467 175.371 16.6343L181.93 10.8L3.13597 11C2.6393 11 2 10.726 2 10.2842C2 9.61437 2.6393 9.4 3.13597 9.4L181.93 9.2L175.371 3.36569C175.02 3.05327 175.02 2.54673 175.371 2.23431Z"
-								fill="currentColor"
-								stroke="currentColor"
-								stroke-width="2.1"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</div>
+						</span>
+						<div class="transition-transform origin-left 2xl:scale-125 group-hover:translate-x-2">
+							<svg class=" animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M175.371 2.23431C175.722 1.9219 176.292 1.9219 176.643 2.23431L184.737 9.43432C185.088 9.74673 185.088 10.2533 184.737 10.5657L176.643 17.7657C176.292 18.0781 175.722 18.0781 175.371 17.7657C175.02 17.4533 175.02 16.9467 175.371 16.6343L181.93 10.8L3.13597 11C2.6393 11 2 10.726 2 10.2842C2 9.61437 2.6393 9.4 3.13597 9.4L181.93 9.2L175.371 3.36569C175.02 3.05327 175.02 2.54673 175.371 2.23431Z"
+									fill="currentColor"
+									stroke="currentColor"
+									stroke-width="2.1"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</button>
 				</div>
 				<div class="hidden w-full lg:block">
 					<img class="object-center h-full" src="indoor.svg" alt="The door of zgen" />

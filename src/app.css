@@ -75,3 +75,7 @@ textarea {
 		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 	}
 }
+
+.letterSpacingTransition {
+	transition: letter-spacing 0.4s ease-in-out;
+}
