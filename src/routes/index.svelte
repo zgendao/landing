@@ -112,7 +112,7 @@
 		</div>
 	</section>
 {:else}
-	<section class="bg-blue-medium">
+	<section class="transition-colors duration-1000 bg-blue-medium">
 		<div class="container flex items-center justify-center w-full min-h-screen">
 			<div class="grid lg:grid-cols-[auto,1fr] gap-20 justify-items-stretch lg:gap-24">
 				<div class="flex flex-col items-center max-w-md gap-3 m-0 md:gap-5 lg:items-start lg:pb-5 lg:max-w-lg xl:max-w-xl lg:gap-7">
@@ -280,7 +280,7 @@
 						<div class="flex items-center justify-center w-full mb-10">
 							<button
 								type="submit"
-								class="px-10 py-2 mt-6 mb-12 font-black text-white border-black rounded-md drop-shadow-sm bossrder-2 font-display bg-blue-light hover:bg-blue-dark xl:px-14 xl:py-3 xl:text-xl"
+								class="py-4 mt-6 mb-12 font-black text-white transition-transform duration-500 border-black rounded-md px-14 drop-shadow-md hover:scale-105 font-display bg-blue-light active:bg-blue-medium xl:px-16 xl:py-3 xl:text-xl"
 							>
 								Submit
 							</button>
