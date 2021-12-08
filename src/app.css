@@ -50,7 +50,7 @@ h6 {
 input,
 textarea,
 select {
-	@apply w-full px-2 py-2 text-sm border-2 border-black focus:outline-none focus:ring-2 focus:ring-blue-light focus:ring-inset;
+	@apply w-full px-2 py-2 text-sm rounded-md focus:outline-none focus:ring-blue-narrow focus:ring lg:focus:ring-blue-medium focus:ring-inset;
 }
 
 textarea {

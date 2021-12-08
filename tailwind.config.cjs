@@ -10,13 +10,15 @@ const config = {
 		extend: {
 			colors: {
 				black: "#333333",
+				input: "#FFFFFF",
 				white: "#F3F3FF",
 				gray: "#252525",
 				green: "ABABB3",
 				blue: {
 					light: "#7577FA",
 					medium: "#5053F2",
-					dark: "#3C3FDD"
+					dark: "#3C3FDD",
+					narrow: "#2F31C1"
 				}
 			}
 		},

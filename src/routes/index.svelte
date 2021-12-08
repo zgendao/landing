@@ -175,33 +175,33 @@
 						BUILD WITH US
 					</h1>
 					<form action="/form" method="post" on:submit|preventDefault={handleSubmit}>
-						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="name">
+						<div class="w-full mb-6 ">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="name">
 								What is your name?
 							</label>
 							<input id="name" name="name" type="text" placeholder="Full name" required />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="describe">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="describe">
 								How do you busy yourself?
 							</label>
 							<textarea id="describe" name="describe" type="text" placeholder="A short introduction..." rows="4" />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="learn">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="learn">
 								How do you like to learn?
 							</label>
 							<textarea id="learn" name="learn" type="text" placeholder="Your learning goals" rows="3" />
 						</div>
 						<div class="flex flex-col items-start justify-start w-full">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="primary">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="primary">
 								What say'st are your primary skill?
 							</label>
 							<div class="flex flex-row items-start justify-start w-full mb-6 ">
 								<select
 									id="primary"
 									name="primary"
-									class="appearance-none w-full bg-white border-2 border-black border-gray-400 hover:border-gray-500 px-2 py-2.5 leading-tight focus:outline-none focus:shadow-outline text-hupi"
+									class="appearance-none w-full bg-input  border-gray-400 hover:border-gray-500 px-2 py-2.5 leading-tight focus:outline-none focus:shadow-outline text-gray"
 								>
 									<option>Frontend Dev</option>
 									<option>Backend Dev</option>
@@ -221,14 +221,14 @@
 							</div>
 						</div>
 						<div class="flex flex-col items-start justify-start w-full">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="secondary">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="secondary">
 								And your secondary skill?
 							</label>
 							<div class="flex flex-row items-start justify-start w-full mb-6 ">
 								<select
 									id="secondary"
 									name="secondary"
-									class="appearance-none w-full bg-white border-2 border-black border-gray-400 hover:border-gray-500 px-2 py-2.5 leading-tight focus:outline-none focus:shadow-outline text-hupi"
+									class="appearance-none w-full bg-input border-gray-400 hover:border-gray-500 px-2 py-2.5 leading-tight focus:outline-none focus:shadow-outline text-hupi"
 								>
 									<option>Memes</option>
 									<option>Frontend Dev</option>
@@ -248,31 +248,31 @@
 							</div>
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="git">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="git">
 								Do you have git account?
 							</label>
 							<input id="git" name="git" type="text" placeholder="Github, Gitlab etc.." />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="project">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="project">
 								Do you have any passion project out of the school and work?
 							</label>
 							<textarea id="project" name="project" type="text" placeholder="Tell us about your project" rows="4" />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="hobbies">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="hobbies">
 								How do you entertain yourself? Tell us about your hobbies.
 							</label>
 							<textarea id="hobbies" name="hobbies" type="text" placeholder="Your freetime activities" rows="3" />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="us">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="us">
 								Where have you heard about us?
 							</label>
 							<input id="us" name="us" type="text" placeholder="Friends, forums" />
 						</div>
 						<div class="w-full mb-6">
-							<label class="block pl-1 mb-2 text-xs font-bold tracking-wide text-white uppercase lg:text-black" for="reach">
+							<label class="block pl-1 mb-2 text-sm font-black text-white uppercase font-display lg:text-black" for="reach">
 								How can we reach you?
 							</label>
 							<textarea id="reach" name="reach" type="text" placeholder="Email, Discord, Telegram" rows="2" required />
@@ -280,7 +280,7 @@
 						<div class="flex items-center justify-center w-full mb-10">
 							<button
 								type="submit"
-								class="px-10 py-2 mt-6 mb-12 font-bold text-white border-2 border-black bg-blue-light hover:bg-blue-dark square xl:px-14 xl:py-3 xl:text-xl"
+								class="px-10 py-2 mt-6 mb-12 font-black text-white border-black rounded-md drop-shadow-sm bossrder-2 font-display bg-blue-light hover:bg-blue-dark xl:px-14 xl:py-3 xl:text-xl"
 							>
 								Submit
 							</button>
