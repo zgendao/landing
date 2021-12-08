@@ -105,7 +105,7 @@
 						</div>
 					</button>
 				</div>
-				<div class="hidden w-full lg:block">
+				<div class="hidden lg:block">
 					<img class="object-center h-full" src="indoor.svg" alt="The door of zgen" />
 				</div>
 			</div>
@@ -114,21 +114,28 @@
 {:else}
 	<section class="flex items-center justify-center min-h-screen bg-blue-medium">
 		<div class="container flex flex-col items-center justify-center lg:flex-row lg:gap-20 xl:gap-24">
-			<div class="flex flex-col items-center justify-center max-w-md gap-4 mb-3 xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-xl">
-				<h1 class="mb-1 text-4xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl">WE ARE SUPERCHARGING WEB3</h1>
-				<p class="text-lg font-medium text-center text-white lg:text-2xl xl:text-3xl xl:font-normal lg:text-left">
-					Building our own ideas in our unique style without compromise.
+			<div
+				class="flex flex-col items-center justify-center max-w-xs gap-4 mb-3 lg:items-start xl:gap-7 lg:mx-0 mt-14 lg:gap-5 lg:m-0 xl:max-w-xl"
+			>
+				<h1
+					class="tracking-tight lg:leading-[4rem] 2xl:leading-[5.2rem] md:text-6xl md:leading-[3.3rem] lg:text-7xl 2xl:text-8xl mb-1 leading-[0.95] text-5xl text-center text-white lg:text-left lg:text-5xl xl:text-6xl"
+				>
+					WE ARE<br /> BOOSTING<br /> WEB3
+				</h1>
+				<p
+					class="tracking-tight lg:leading-7 2xl:leading-[2.2rem] md:text-xl md:leading-[1.4rem] lg:text-2xl 2xl:text-3xl text-lg leading-[1.2] font-normal text-center text-white lg:text-2xl xl:font-normal lg:text-left"
+				>
+					Building our own ideas in our unique style without compromise in <b>Szeged.</b>
 				</p>
-				<p class="text-lg font-medium text-center text-white lg:text-2xl xl:text-3xl xl:font-normal lg:text-left">
-					We are working with ETH, SOL and MATIC technologies.
+				<p
+					class="tracking-tight lg:leading-7 2xl:leading-[2.2rem] md:text-xl md:leading-[1.4rem] lg:text-2xl 2xl:text-3xl text-lg leading-[1.2] font-normal text-center text-white lg:text-2xl xl:font-normal lg:text-left"
+				>
+					We are backed by teams like<br /> <b>Polygon • Harmony • Aragon</b>
 				</p>
-				<p class="text-lg font-medium text-center text-white lg:text-2xl xl:text-3xl xl:font-normal lg:text-left">
-					Regularly participating in conferences like Ethcc4, Liscon and the DAOist.
-				</p>
+				<img class="object-center w-full pr-4 mt-6 lg:hidden" src="blockbuilding.svg" />
 			</div>
-			<div class="mt-4 mr-3 lg:m-0">
-				<img class="object-center lg:hidden" src="blockbuilding.svg" />
-				<img class="hidden object-center lg:block xl:scale-125" src="outdoor.svg" />
+			<div class="hidden lg:block">
+				<img class="object-center h-full" src="outdoor.svg" />
 			</div>
 		</div>
 	</section>
