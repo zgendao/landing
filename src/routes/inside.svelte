@@ -36,10 +36,10 @@
 					</p>
 				</div>
 				<div class="w-full pt-6 md:pt-8 lg:hidden">
-					<img class="object-center w-full pl-6 pr-12 lg:mt-6 md:pl-0 md:pr-4 " src="blockbuilding.svg" />
+					<img class="object-center w-full pl-6 pr-12 lg:mt-6 md:pl-0 md:pr-4 " src="blockbuilding.svg" alt="building graphic" />
 				</div>
 				<button
-					class="items-center hidden gap-5 mt-auto text-white transition transition-transform duration-700 lg:flex group hover:translate-x-1 "
+					class="items-center hidden gap-5 mt-auto text-white transition-transform duration-700 lg:flex group hover:translate-x-1 "
 					on:click={handleClick}
 				>
 					<span

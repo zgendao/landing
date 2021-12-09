@@ -25,7 +25,7 @@
 					<img class="object-center w-full" src="indoor.svg" alt="The door of zgen" />
 				</div>
 				<button
-					class="items-center hidden gap-5 mt-auto text-black transition transition-transform duration-500 lg:flex group hover:translate-x-1 hover:text-blue-dark"
+					class="items-center hidden gap-5 mt-auto text-black transition-transform duration-500 lg:flex group hover:translate-x-1 hover:text-blue-dark"
 					on:click={handleClick}
 				>
 					<span
