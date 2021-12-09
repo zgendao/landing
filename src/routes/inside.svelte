@@ -25,7 +25,10 @@
 					<p
 						class="max-w-md md:text-xl text-lg font-normal text-center text-white xl:max-w-lg xl:text-3xl lg:leading-6 leading-[1.2] md:leading-[1.4rem] xl:leading-[2.2rem] lg:text-left lg:text-xl lg:font-normal"
 					>
-						We are backed by teams like<br /> <b>Polygon • Harmony • Aragon</b>
+						We are backed by teams like<br />
+						<b><a href="https://polygon.technology">Polygon</a></b> <b> • <a href="https://www.harmony.one">Harmony </a></b><b
+							>• <a href="https://aragon.org">Aragon</a></b
+						>
 					</p>
 				</div>
 				<div class="w-full pt-6 md:pt-8 lg:hidden">
@@ -40,8 +43,27 @@
 					>
 						BUILD WITH US
 					</span>
-					<div class="transition-transform origin-left xl:scale-125 group-hover:translate-x-2">
-						<svg class=" animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
+					<div class="transition-transform origin-left scale-120 group-hover:translate-x-2">
+						<svg
+							class="hidden lg:block xl:hidden animate-bounce"
+							width="147"
+							height="20"
+							viewBox="0 0 147 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M135.502 2.23431C135.853 1.9219 136.423 1.9219 136.774 2.23431L144.867 9.43432C145.219 9.74673 145.219 10.2533 144.867 10.5657L136.774 17.7657C136.423 18.0781 135.853 18.0781 135.502 17.7657C135.151 17.4533 135.151 16.9467 135.502 16.6343L142.06 10.8L3.13597 11C2.6393 11 2 10.726 2 10.2842C2 9.61437 2.6393 9.4 3.13597 9.4L142.06 9.2L135.502 3.36569C135.151 3.05327 135.151 2.54673 135.502 2.23431Z"
+								fill="currentColor"
+								stroke="currentColor"
+								stroke-width="2.1"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<svg class="hidden xl:block animate-bounce" width="187" height="20" viewBox="0 0 187 20" xmlns="http://www.w3.org/2000/svg">
 							<path
 								fill-rule="evenodd"
 								clip-rule="evenodd"
