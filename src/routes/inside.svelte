@@ -26,8 +26,12 @@
 						class="max-w-md md:text-xl text-lg font-normal text-center text-white xl:max-w-lg xl:text-3xl lg:leading-6 leading-[1.2] md:leading-[1.4rem] xl:leading-[2.2rem] lg:text-left lg:text-xl lg:font-normal"
 					>
 						We are backed by teams like<br />
-						<b><a href="https://polygon.technology">Polygon</a></b> <b> • <a href="https://www.harmony.one">Harmony </a></b><b
-							>• <a href="https://aragon.org">Aragon</a></b
+						<b class="inline-flex justify-center"
+							><a href="https://polygon.technology">Polygon</a>
+							<span class="px-2">•</span>
+							<a href="https://www.harmony.one">Harmony </a>
+							<span class="px-2">•</span>
+							<a href="https://aragon.org">Aragon</a></b
 						>
 					</p>
 				</div>
@@ -84,6 +88,6 @@
 		</div>
 	</div>
 </section>
-<!-- <div class="lg:hidden">
+<div class="lg:hidden">
 	<Form />
-</div> -->
+</div>
