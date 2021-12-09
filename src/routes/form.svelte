@@ -119,7 +119,7 @@
 					</div>
 					<div class="w-full mb-6">
 						<label class="block pl-1 mb-1 text-sm font-black text-white uppercase font-display lg:text-black" for="project">
-							Do you have any passion project out of the school and work?
+							Do you have any passion project out of school and work?
 						</label>
 						<textarea id="project" name="project" type="text" placeholder="Tell us about your project" rows="4" />
 					</div>
@@ -139,7 +139,7 @@
 						<label class="block pl-1 mb-1 text-sm font-black text-white uppercase font-display lg:text-black" for="reach">
 							How can we reach you?
 						</label>
-						<textarea id="reach" name="reach" type="text" placeholder="Email, Discord, Telegram" rows="2" required />
+						<textarea id="reach" name="reach" type="text" placeholder="Email address, Discord or Telegram account" rows="2" required />
 					</div>
 					<div class="flex items-center justify-center w-full mb-10">
 						<button
@@ -159,7 +159,7 @@
 	@media (min-width: 1024px) {
 		.hatter {
 			background-image: url("/hatter.svg");
-			@apply bg-no-repeat bg-center bg-top;
+			@apply bg-no-repeat bg-top;
 			background-size: 100% auto;
 		}
 	}
