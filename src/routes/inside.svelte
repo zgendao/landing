@@ -1,10 +1,17 @@
 <script>
 	import Form from "./form.svelte";
+	import { onMount } from "svelte";
 
 	export let page = "";
 	const handleClick = () => {
 		page = "form";
 	};
+	let LottiePlayer;
+
+	onMount(async () => {
+		const module = await import("@lottiefiles/svelte-lottie-player");
+		LottiePlayer = module.LottiePlayer;
+	});
 </script>
 
 <section class="pt-12 transition-colors duration-1000 bg-blue-medium lg:pt-0">
@@ -35,8 +42,21 @@
 						>
 					</p>
 				</div>
-				<div class="w-full pt-6 md:pt-8 lg:hidden">
-					<img class="object-center w-full pl-6 pr-12 lg:mt-6 md:pl-0 md:pr-4 " src="blockbuilding.svg" alt="building graphic" />
+				<div class="w-full h-[300px] ml-6 lg:hidden">
+					{#if LottiePlayer}
+						<LottiePlayer
+							src="/building.json"
+							autoplay={true}
+							loop={true}
+							controls={false}
+							renderer="svg"
+							background="transparent"
+							height={250}
+							width={250}
+						/>
+					{:else}
+						<img class="object-center pt-6  w-full pl-6 pr-12 lg:mt-6 md:pl-0 md:pr-4 " src="blockbuilding.svg" alt="building graphic" />
+					{/if}
 				</div>
 				<button
 					class="items-center hidden gap-5 mt-auto text-white transition-transform duration-700 lg:flex group hover:translate-x-1 "
