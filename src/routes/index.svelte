@@ -1,10 +1,19 @@
 <script>
+	import Form from "$lib/components/Form.svelte";
+	import Inside from "$lib/components/Inside.svelte";
+	import Outside from "$lib/components/Outside.svelte";
+
 	let page = "outside";
 
 	import { SvelteToast, toast } from "@zerodevx/svelte-toast";
-	import Form from "./form.svelte";
-	import Outside from "./outside.svelte";
-	import Inside from "./inside.svelte";
+	import { onMount } from "svelte";
+
+	const handleScroll = (e) => {
+		const pos = document.getElementById("asd").offsetTop;
+		console.log(pos);
+	};
+
+	onMount(() => document.addEventListener("scroll", handleScroll));
 </script>
 
 {#if page === "outside"}
