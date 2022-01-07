@@ -1,20 +1,20 @@
 <svg width="262" height="423" viewBox="0 0 262 423" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M30 3H260V368H30V3Z" fill="#5053F2"/>
 <path d="M31.7481 371H259V392H4.5L31.7481 371Z" fill="#3C3FDD"/>
-<rect x="260.5" y="393.5" width="259" height="392" transform="rotate(180 260.5 393.5)" stroke="#333333" stroke-width="3"/>
-<line x1="32.5" y1="371" x2="32.5" y2="1" stroke="#333333" stroke-width="3"/>
-<line x1="30" y1="369.5" x2="260" y2="369.5" stroke="#333333" stroke-width="3"/>
-<line x1="32.9183" y1="368.186" x2="1.91826" y2="392.186" stroke="#333333" stroke-width="3"/>
-<line x1="70.9438" y1="336.834" x2="175.944" y2="421.834" stroke="#333333" stroke-width="3"/>
-<line x1="118.947" y1="1.83643" x2="177.947" y2="49.8364" stroke="#333333" stroke-width="3"/>
-<path d="M158.739 2.32644L216.26 47.6738" stroke="#333333" stroke-width="3"/>
-<line x1="175" y1="421.5" x2="217" y2="421.5" stroke="#333333" stroke-width="3"/>
-<line x1="177" y1="50.5" x2="217" y2="50.5" stroke="#333333" stroke-width="3"/>
-<line x1="179.5" y1="423" x2="179.5" y2="46" stroke="#333333" stroke-width="3"/>
-<line x1="215.5" y1="423" x2="215.5" y2="46" stroke="#333333" stroke-width="3"/>
-<rect x="176.5" y="47.5" width="39" height="374" fill="#7577FA" stroke="#333333" stroke-width="3"/>
-<path d="M72 3H118.68L175 49.5V419.222L72.5 336.5L72 3Z" fill="white"/>
+<path d="M1.5 393.5L260.5 393.5L260.5 1.5L1.5 1.5L1.5 393.5Z" stroke="#333333" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M32.5 371V1" stroke="#333333" stroke-width="3"/>
+<path d="M30 369.5H260" stroke="#333333" stroke-width="3"/>
+<path d="M32.918 368.186L1.91797 392.186" stroke="#333333" stroke-width="3"/>
+<path d="M70.9434 336.834L175.944 421.834" stroke="#333333" stroke-width="3"/>
+<path d="M118.947 1.83643L177.947 49.8364" stroke="#333333" stroke-width="3"/>
+<path d="M158.739 2.32666L216.26 47.674" stroke="#333333" stroke-width="3"/>
+<path d="M175 421.5H217" stroke="#333333" stroke-width="3"/>
+<path d="M177 50.5H217" stroke="#333333" stroke-width="3"/>
+<path d="M179.5 423V46" stroke="#333333" stroke-width="3"/>
+<path d="M215.5 423V46" stroke="#333333" stroke-width="3"/>
+<path d="M215.5 47.5H176.5V421.5H215.5V47.5Z" fill="#7577FA" stroke="#333333" stroke-width="3"/>
+<path d="M72 3H118.68L175 49.5V419.222L72.5 336.5L72 3Z" fill="#F3F3FF"/>
 <path d="M3 3H31V368L3 389.5V3Z" fill="#7577FA"/>
 <path d="M123 3H158L211.5 46H175.5L123 3Z" fill="#3C3FDD"/>
-<path d="M71.2666 338L71.2666 3" stroke="#333333" stroke-width="3"/>
+<path d="M71.2666 338V3" stroke="#333333" stroke-width="3"/>
 </svg>

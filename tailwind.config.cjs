@@ -5,18 +5,20 @@ const config = {
 	theme: {
 		fontFamily: {
 			display: ["Red Hat Display", "sans-serif"],
-			body: ["Inter var", "Inter", "sans-serif"]
+			body: ["Roboto var", "Roboto", "sans-serif"]
 		},
 		extend: {
 			colors: {
 				black: "#333333",
-				white: "#FBFBFB",
+				input: "#FFFFFF",
+				white: "#F3F3FF",
 				gray: "#252525",
 				green: "ABABB3",
 				blue: {
 					light: "#7577FA",
 					medium: "#5053F2",
-					dark: "#3C3FDD"
+					dark: "#3C3FDD",
+					narrow: "#2F31C1"
 				}
 			}
 		},
