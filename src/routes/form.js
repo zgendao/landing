@@ -6,7 +6,7 @@ export async function post(request) {
 		},
 		body: JSON.stringify(
 			{
-				chat_id: -643540672,
+				chat_id: -1001326079708,
 				text: JSON.parse(request.body)
 			},
 			null,
