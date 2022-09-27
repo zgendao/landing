@@ -2,7 +2,7 @@
 	let page = "outside";
 
 	import { SvelteToast, toast } from "@zerodevx/svelte-toast";
-	import Form from "./form.svelte";
+	import Form from "./join.svelte";
 	import Outside from "./outside.svelte";
 	import Inside from "./inside.svelte";
 </script>

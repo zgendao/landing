@@ -1,5 +1,5 @@
 <script>
-	import Form from "./form.svelte";
+	import Form from "./join.svelte";
 	import { onMount } from "svelte";
 
 	export let page = "";
