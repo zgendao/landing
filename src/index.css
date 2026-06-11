@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+	--font-display: "Red Hat Display", sans-serif;
+	--font-body: "Roboto", sans-serif;
+
+	--color-black: #333333;
+	--color-input: #ffffff;
+	--color-white: #f3f3ff;
+	--color-gray: #252525;
+	--color-blue-light: #7577fa;
+	--color-blue-medium: #5053f2;
+	--color-blue-dark: #3c3fdd;
+	--color-blue-narrow: #2f31c1;
+
+	/* The arrow buttons bounce horizontally — overrides the default vertical bounce */
+	--animate-bounce: bounce 1s infinite;
+
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateX(-0.5%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateX(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+}
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: 2rem;
+
+	@media (width >= theme(--breakpoint-sm)) {
+		padding-inline: 3rem;
+	}
+	@media (width >= theme(--breakpoint-lg)) {
+		padding-inline: 4rem;
+	}
+}
+
+html {
+	font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-display);
+	font-weight: 900;
+}
+
+/* Animated underline on links (slide in from the left) */
+a {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: var(--color-white);
+	opacity: 1;
+	transform: translate3d(-100%, 0, 0);
+	transition:
+		opacity 300ms,
+		transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	border-radius: 0.375rem;
+	background-color: var(--color-input);
+	color: var(--color-gray);
+	transition: box-shadow 500ms;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	box-shadow: inset 0 0 0 3px var(--color-blue-narrow);
+}
+
+@media (width >= theme(--breakpoint-lg)) {
+	input:focus,
+	textarea:focus,
+	select:focus {
+		box-shadow: inset 0 0 0 3px var(--color-blue-light);
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+.letterSpacingTransition {
+	transition: letter-spacing 0.4s ease-in-out;
+}
+
+/* Door background behind the join form on desktop */
+@media (width >= theme(--breakpoint-lg)) {
+	.hatter {
+		background-image: url("/hatter.svg");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: 100% auto;
+	}
+}
+
+@keyframes toast-in {
+	from {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

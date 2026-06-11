@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
-/build
-/.svelte-kit
-/.vercel_build_output
-/package
+/dist
 .env.local
+.dev.vars
+.wrangler
+.claude/
+*.tsbuildinfo

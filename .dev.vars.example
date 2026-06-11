@@ -1,0 +1,2 @@
+# Copy to .dev.vars for local development (never commit the real token)
+TELEGRAM_TOKEN=your-telegram-bot-token
