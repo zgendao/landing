@@ -49,9 +49,7 @@ export default function JoinForm() {
 			<div className="container flex flex-col items-center justify-center px-0 pt-6 mt-16 md:mt-0 lg:mt-24 lg:pt-0 xl:px-28">
 				<div className="flex justify-center w-full hatter">
 					<div className="mx-8 w-max lg:mx-0">
-						<h1 className="mb-8 text-4xl text-center text-white lg:text-black lg:text-5xl xl:text-6xl lg:mt-56 2xl:mt-72">
-							BUILD WITH US
-						</h1>
+						<h1 className="mb-8 text-4xl text-center text-white lg:text-black lg:text-5xl xl:text-6xl lg:mt-56 2xl:mt-72">BUILD WITH US</h1>
 						<form onSubmit={handleSubmit}>
 							<div className="w-full mb-6">
 								<FieldLabel htmlFor="name">What is your name?</FieldLabel>
