@@ -5,6 +5,8 @@
     "": {
       "name": "zgen-landing",
       "dependencies": {
+        "@fontsource/red-hat-display": "^5.2.8",
+        "@fontsource/roboto": "^5.2.10",
         "lottie-web": "^5.13.0",
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
@@ -102,6 +104,10 @@
     "@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.27.3", "", { "os": "win32", "cpu": "ia32" }, "sha512-QLKSFeXNS8+tHW7tZpMtjlNb7HKau0QDpwm49u0vUp9y1WOF+PEzkU84y9GqYaAVW8aH8f3GcBck26jh54cX4Q=="],
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.3", "", { "os": "win32", "cpu": "x64" }, "sha512-4uJGhsxuptu3OcpVAzli+/gWusVGwZZHTlS63hh++ehExkVT8SgiEf7/uC/PclrPPkLhZqGgCTjd0VWLo6xMqA=="],
+
+    "@fontsource/red-hat-display": ["@fontsource/red-hat-display@5.2.8", "", {}, "sha512-nvM6ckA1ZbTNV2eguVbiPwCD68dDddmEGsS4T3zlCw1hBU+idpuEz1FQe0qmlufntyV8PxgCL588GMYXmCNbcQ=="],
+
+    "@fontsource/roboto": ["@fontsource/roboto@5.2.10", "", {}, "sha512-8HlA5FtSfz//oFSr2eL7GFXAiE7eIkcGOtx7tjsLKq+as702x9+GU7K95iDeWFapHC4M2hv9RrpXKRTGGBI8Zg=="],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 

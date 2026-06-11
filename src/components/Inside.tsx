@@ -6,20 +6,33 @@ function BuildingAnimation() {
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
+		const container = containerRef.current;
+		if (!container) return;
 		let animation: { destroy(): void } | undefined;
 		let cancelled = false;
-		import("lottie-web").then((lottie) => {
-			if (cancelled || !containerRef.current) return;
-			animation = lottie.default.loadAnimation({
-				container: containerRef.current,
-				renderer: "svg",
-				loop: true,
-				autoplay: true,
-				path: "/building.json"
-			});
-		});
+		// Load the player only when the container scrolls near the viewport —
+		// on desktop the block is display:none, so the chunk never downloads
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (!entries.some((entry) => entry.isIntersecting)) return;
+				observer.disconnect();
+				import("lottie-web").then((lottie) => {
+					if (cancelled || !containerRef.current) return;
+					animation = lottie.default.loadAnimation({
+						container: containerRef.current,
+						renderer: "svg",
+						loop: true,
+						autoplay: true,
+						path: "/building.json"
+					});
+				});
+			},
+			{ rootMargin: "300px" }
+		);
+		observer.observe(container);
 		return () => {
 			cancelled = true;
+			observer.disconnect();
 			animation?.destroy();
 		};
 	}, []);
